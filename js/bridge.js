@@ -5,11 +5,11 @@ define([], function() {
     })
 
     return {
-        Message: function(alha, beta, gamma) {
+        Message: function(alpha, beta, gamma) {
             this.alpha = alpha;
             this.beta = beta;
             this.gamma = gamma;
-            this.timestamp = Date.new();
+            this.timestamp = Date.now();
         },
         subscribe: function() {
             return new Promise(function(resolve, reject) {

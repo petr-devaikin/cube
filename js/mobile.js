@@ -5,7 +5,7 @@ define(['helpers', 'bridge'], function(helpers, bridge) {
         if (Date.now() - lastUpdate > 1000 / 5) {
             lastUpdate = Date.now();
 
-            var data = bridge.Message(
+            var data = new bridge.Message(
                 event.alpha,
                 event.beta,
                 event.gamma

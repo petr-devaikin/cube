@@ -7,6 +7,9 @@ define([], function() {
 		},
         logData: function(data) {
             document.getElementById('log').innerHTML = data.alpha + '<br/>' + data.beta + '<br/>' + data.gamma;
+        },
+        log: function(msg) {
+            document.getElementById('log').innerHTML = msg;
         }
 	}
 })
